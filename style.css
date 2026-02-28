@@ -12,8 +12,9 @@ body {
     display: flex;
     flex-direction: column; 
 }
+
 .login-box{
-   background-color: black;
+   background-color: white;
     max-width: 450px;
     margin: 50px auto;
     border-radius: 12px;
@@ -133,7 +134,19 @@ body {
     list-style: none;
     padding-top: 20px;
 }
+.menu li {
+    position: relative;
+}
 
+.submenu-opciones {
+    display: none;
+    position: absolute;
+    background: #1e3c72;
+    padding: 10px; 
+}
+.submenu:hover .submenu-opciones {
+    display: block;
+}
 .menu ul li a {
     color: white;
     text-decoration: none;
@@ -162,4 +175,116 @@ body {
     color: white;
     text-align: center;
     padding: 1rem;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black; 
+}
+    td{
+    text-align: center;
+     border: 1px solid black;
+     font-weight: bold;
+    background-color: #f2f2f2
+    
+   
+}
+th{
+    border: 1px solid black; 
+}
+
+tfoot {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+
+
+/*recuperacion*/
+
+.recuperar-box {
+    background-color: #f2f2f2;
+    max-width: 450px;
+    margin: 100px auto;
+    padding: 4rem;
+    border: 2px solid #ccc;
+   
+}
+.recuperar-box input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.recuperar-box h2, 
+.recuperar-box form {
+    padding: 0 2rem; 
+}
+.recuperar-box h1{
+    padding: 0 2rem;
+    text-align: center;
+}
+.recuperar-box p{
+    padding: 0 2rem;
+    text-align: center;
+    color: #333;
+}
+.recuperar-box button{
+    width: 100%;
+    padding: 12px;
+    background-color: #2a5298;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px 0;
+    transition: 0.6s;
+}
+/* Cambio de contraseña*/
+
+
+.cambio-contraseña-box {
+    background-color: #f2f2f2;
+    max-width: 450px;
+    margin: 100px auto;
+    padding: 4rem;
+    border: 2px solid #ccc;
+}
+.cambio-contraseña-box input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.cambio-contraseña-box h2, 
+.cambio-contraseña-box form {   
+    padding: 0 2rem; 
+}   
+.cambio-contraseña-box h1{
+    padding: 0 2rem;
+    text-align: center;
+}
+.cambio-contraseña-box p{
+    padding: 0 2rem;
+    text-align: center;
+    color: #333;
+}   
+.cambio-contraseña-box button{
+    width: 100%;
+    padding: 12px;
+    background-color: #2a5298;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px 0;
+    transition: 0.6s;
+}
+.cambio-contraseña-box button:hover {
+    background-color: #1e3c72;
 }

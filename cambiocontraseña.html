@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CambioContraseña</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="cambio-contraseña-box">
+
+        <header>
+            <h1>Cambio de Contraseña</h1>
+            <br>
+            <p>Ingrese su nueva contraseña</p>
+            <br
+        </header> 
+        <form action="inicio.html" method="POST">
+
+            <label for="password-actual">Contraseña Actual:</label>
+            <input type="password" id="password-actual" name="password_actual" required>
+            <br><br>
+
+            <label for="password-nueva">Nueva Contraseña:</label>
+            <input type="password" id="password-nueva" name="password_nueva" required>
+            <br><br>
+
+            <label for="password-confirmar">Confirmar Contraseña:</label>
+            <input type="password" id="password-confirmar" name="password_confirmar" required>
+
+            <br><br>
+
+            <button type="submit">Cambiar Contraseña</button>
+            <button type="button" onclick="window.location.href='inicio.html'">Cancelar</button>
+
+        </form>
+
+    </section>
+</body>
